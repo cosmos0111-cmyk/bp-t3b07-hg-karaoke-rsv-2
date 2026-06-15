@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 | 화곡 가라오케 예약</title>
+    <meta name="description" content="화곡 가라오케 예약의 모든 것. 진짜를 원하는 당신을 위한 날카로운 인사이트. 010-6279-0862.">
+    <meta name="keywords" content="화곡 가라오케, 화곡 가라오케 예약, 화곡 노래방, 화곡 가라오케 추천, 화곡 술집, 화곡 데이트, 화곡 회식">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-ivory-ink">
+    <link rel="canonical" href="https://t3b07-hg-karaoke-rsv-2.vercel.app/blog">
+    <meta property="og:title" content="블로그 | 화곡 가라오케 예약 | 당신의 밤을 지배할 단 하나의 선택">
+    <meta property="og:description" content="화곡에서 가장 날카로운 가라오케, 지금 예약하세요. 진짜를 원하는 당신을 위한 공간.">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #faf7f0;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 2rem;
+            line-height: 1.3;
+            margin-bottom: 0.75rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 1.25rem;
+            color: #2d2d2d;
+        }
+        a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        a:hover {
+            border-bottom-color: #1a1a1a;
+        }
+        .drop-cap::first-letter {
+            font-size: 3.5rem;
+            float: left;
+            line-height: 1;
+            margin-right: 0.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .section-gap {
+            padding: 4rem 0;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #faf7f0;
+            border-bottom: 1px solid #e0dcd3;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            border: none;
+        }
+        nav .logo:hover {
+            border: none;
+            opacity: 0.8;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        nav ul li a {
+            font-size: 1rem;
+            font-weight: 500;
+            border: none;
+            padding: 0.25rem 0;
+            position: relative;
+        }
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #1a1a1a;
+            transition: width 0.3s ease;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        .tel-link {
+            font-weight: 700;
+            font-size: 1.125rem;
+            border: 1px solid #1a1a1a;
+            padding: 0.5rem 1.25rem;
+            border-radius: 4px;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+        .tel-link:hover {
+            background: #1a1a1a;
+            color: #faf7f0;
+            border-color: #1a1a1a;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+        }
+        .hamburger-menu span {
+            width: 24px;
+            height: 2px;
+            background: #1a1a1a;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .blog-hero {
+            padding: 6rem 0 3rem;
+        }
+        .blog-hero h1 {
+            font-size: 3rem;
+            max-width: 800px;
+        }
+        .blog-hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            color: #555;
+        }
+        .blog-content {
+            padding: 2rem 0 6rem;
+        }
+        .blog-content article {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .blog-content article h2 {
+            margin-top: 2.5rem;
+        }
+        .blog-content article p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+        }
+        .blog-content article .highlight {
+            background: #e8e4db;
+            padding: 1.5rem;
+            border-left: 4px solid #1a1a1a;
+            margin: 2rem 0;
+        }
+        .blog-content article .highlight p {
+            margin-bottom: 0;
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .blog-hero {
+                padding: 4rem 0 2rem;
+            }
+            .blog-hero h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #faf7f0;
+                padding: 1.5rem;
+                border-bottom: 1px solid #e0dcd3;
+                gap: 1rem;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .tel-link {
+                display: inline-block;
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">화곡 가라오케 예약</a>
+                <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('active')">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/about">소개</a></li>
+                    <li><a href="/blog">블로그</a></li>
+                    <li><a href="/reservation">예약</a></li>
+                    <li><a href="tel:01062790862" class="tel-link">010-6279-0862</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-hero">
+            <div class="container">
+                <h1>화곡 가라오케 예약,<br>진짜를 원한다면 이렇게 하라</h1>
+                <p>가식 없는 사운드, 완벽한 프라이빗. 당신의 밤을 지배할 단 하나의 선택.</p>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <div class="container">
+                <article>
+                    <p class="drop-cap">화곡에서 가라오케를 찾는 사람들. 대부분은 실패한다. 왜? 그들은 '적당한' 곳을 원하기 때문이다. 적당한 음질, 적당한 분위기, 적당한 서비스. 그리고 적당히 망치는 밤. 나는 말한다. 진짜를 원한다면, 적당함을 버려라. 화곡 가라오케 예약은 단순한 전화 한 통이 아니다. 그것은 선언이다. "오늘 밤, 나는 타협하지 않겠다"는 선언.</p>
+
+                    <p>화곡이라는 지역은 묘하다. 서울의 변두리라는 인식, 하지만 여기엔 진짜가 숨어 있다. 문제는 대부분이 그 진짜를 찾는 법을 모른다는 거다. 네이버에 '화곡 가라오케' 검색하면 수십 개의 업소가 뜬다. 별점 4.5, 리뷰 200개. 다 거기서 거기다. 착한 가격, 친절한 서비스, 깔끔한 시설. 지루해 죽겠다. 진짜 가라오케는 그런 걸로 승부하지 않는다.</p>
+
+                    <h2>사운드가 전부다, 나머지는 핑계다</h2>
+                    <p>내가 화곡 가라오케 예약을 강조하는 이유는 단 하나다. 사운드. 대부분의 가라오케는 방음에 목숨 건다. 물론 중요하다. 하지만 더 중요한 건 울림이다. 내 목소리가 공간을 채우는 느낌, 내 진동이 벽에 닿는 감각. 그걸 이해하는 곳이 화곡에 있다. 내가 직접 경험했다. 처음엔 의심했다. "여기가 진짜 다를까?" 들어갔다. 첫 소절. 소름. 그날 나는 새벽 3시까지 있었다. 예약하고 간 게 아니라, 그냥 들어갔다가 6시간을 채웠다.</p>
+
+                    <div class="highlight">
+                        <p>"좋은 가라오케는 당신의 목소리를 바꾸지 않는다. 당신이 가진 최고의 버전을 끌어낼 뿐이다."</p>
+                    </div>
+
+                    <h2>프라이빗의 진정한 의미</h2>
+                    <p>프라이빗. 요즘 모든 가라오케가 이 말을 쓴다. 하지만 대부분은 그냥 '방'일 뿐이다. 진짜 프라이빗은 무엇인가? 그것은 타인의 시선에서 완전히 자유로워지는 것이다. 화곡 가라오케 예약을 할 때, 나는 그곳의 공간 구성을 본다. 복도에서 소리가 새어나오는가? 다른 방의 노래가 들리는가? 직원이 불필요하게 방문하는가? 이 모든 것이 '프라이빗'의 기준이다. 화곡의 그곳은 다르다. 방문을 닫으면 세상이 차단된다. 오직 당신과 음악만 남는다.</p>
+
+                    <h2>예약, 그 단순한 행위의 무게</h2>
+                    <p>010-6279-0862. 이 번호를 누르는 순간, 당신은 선택한 것이다. 더 이상 검색하지 않겠다고. 더 이상 비교하지 않겠다고. 이 번호는 단순한 연락처가 아니다. 그것은 화곡에서 가장 날카로운 가라오케의 관문이다. 나는 예약할 때마다 느낀다. 이 전화 한 통이 내 밤을 바꾼다는 것을. 그리고 매번 실패하지 않는다.</p>
+
+                    <p>솔직히 말해서, 모든 사람이 이곳을 이해할 거라고 기대하지 않는다. 어떤 이들은 여전히 '적당한' 곳을 찾아 헤맬 것이다. 그들에겐 미안하지만, 이 글은 그들을 위한 것이 아니다. 이 글은 진짜를 원하는 당신을 위한 것이다. 화곡 가라오케 예약, 오늘 하라. 그리고 내 말이 맞는지 확인해봐라. 당신은 다시 돌아올 수밖에 없을 테니까.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

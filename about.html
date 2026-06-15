@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화곡 가라오케 예약 | 정보</title>
+    <meta name="description" content="화곡에서 가장 날카로운 가라오케, 지금 예약하세요. 010-6279-0862. 진짜를 원하는 당신을 위한 공간. 가식 없는 사운드, 완벽한 프라이빗.">
+    <meta name="keywords" content="화곡 가라오케, 화곡 가라오케 예약, 화곡 노래방, 화곡 가라오케 추천, 화곡 술집, 화곡 데이트, 화곡 회식">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-ivory-ink">
+    <link rel="canonical" href="https://t3b07-hg-karaoke-rsv-2.vercel.app/info">
+    <meta property="og:title" content="화곡 가라오케 예약 | 당신의 밤을 지배할 단 하나의 선택">
+    <meta property="og:description" content="화곡에서 가장 날카로운 가라오케, 지금 예약하세요. 진짜를 원하는 당신을 위한 공간.">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif; background: #faf8f5; color: #1a1a1a; line-height: 1.7; }
+        h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
+        h1 { font-size: 2.8rem; line-height: 1.2; margin-bottom: 1.5rem; }
+        h2 { font-size: 2rem; line-height: 1.3; margin-bottom: 1.2rem; }
+        h3 { font-size: 1.4rem; line-height: 1.4; margin-bottom: 0.8rem; }
+        p { font-size: 1.05rem; margin-bottom: 1.2rem; color: #2a2a2a; }
+        a { color: #1a1a1a; text-decoration: none; border-bottom: 1.5px solid transparent; transition: border-color 0.2s; }
+        a:hover { border-bottom-color: #1a1a1a; }
+        .drop-cap::first-letter { font-size: 3.5rem; font-weight: 700; float: left; line-height: 0.8; margin-right: 0.5rem; color: #1a1a1a; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+        .section-gap { padding: 5rem 0; }
+
+        /* Header & Nav */
+        header { position: sticky; top: 0; z-index: 100; background: #faf8f5; border-bottom: 1px solid #e5e0d8; }
+        .nav-present { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; max-width: 1100px; margin: 0 auto; }
+        .nav-present .logo { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.03em; border: none; }
+        .nav-present .logo:hover { border: none; opacity: 0.8; }
+        .nav-present .nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
+        .nav-present .nav-links a { font-size: 0.95rem; font-weight: 500; border: none; padding: 0.3rem 0; position: relative; }
+        .nav-present .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1.5px; background: #1a1a1a; transition: width 0.25s; }
+        .nav-present .nav-links a:hover::after { width: 100%; }
+        .nav-present .tel-link { font-weight: 700; font-size: 1.05rem; border: 1.5px solid #1a1a1a; padding: 0.4rem 1.2rem; border-radius: 0; transition: background 0.2s, color 0.2s; }
+        .nav-present .tel-link:hover { background: #1a1a1a; color: #faf8f5; border-color: #1a1a1a; }
+
+        /* Hamburger */
+        .hamburger-menu { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.5rem; }
+        .hamburger-menu span { display: block; width: 28px; height: 2px; background: #1a1a1a; transition: all 0.3s; }
+
+        /* Info-specific styles */
+        .info-hero { padding: 6rem 0 3rem; text-align: left; }
+        .info-hero h1 { max-width: 800px; margin-bottom: 0.5rem; }
+        .info-hero p { font-size: 1.2rem; max-width: 700px; color: #4a4a4a; }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 3rem 0; }
+        .info-card { padding: 2.5rem; background: #fff; border: 1px solid #e5e0d8; }
+        .info-card h3 { margin-bottom: 1rem; }
+        .info-card p { font-size: 0.98rem; color: #3a3a3a; }
+        .info-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 4rem 0; }
+        .info-detail-item { border-top: 2px solid #1a1a1a; padding-top: 1.5rem; }
+        .info-detail-item h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .info-detail-item p { font-size: 0.95rem; color: #4a4a4a; }
+        .info-cta { text-align: center; padding: 4rem 0; border-top: 1px solid #e5e0d8; border-bottom: 1px solid #e5e0d8; margin: 4rem 0; }
+        .info-cta .tel-link-big { display: inline-block; font-size: 2rem; font-weight: 700; border: 2px solid #1a1a1a; padding: 1rem 3rem; transition: all 0.2s; margin-top: 1rem; }
+        .info-cta .tel-link-big:hover { background: #1a1a1a; color: #faf8f5; }
+        .faq-section { margin: 4rem 0; }
+        .faq-item { padding: 1.5rem 0; border-bottom: 1px solid #e5e0d8; }
+        .faq-item h4 { font-size: 1.1rem; cursor: default; }
+        .faq-item p { font-size: 0.95rem; color: #4a4a4a; margin-top: 0.5rem; margin-bottom: 0; }
+
+        footer { padding: 3rem 0; border-top: 1px solid #e5e0d8; text-align: center; font-size: 0.9rem; color: #6a6a6a; }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 1.2rem; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            .section-gap { padding: 3rem 0; }
+            .nav-present { padding: 0.8rem 1.2rem; }
+            .hamburger-menu { display: flex; }
+            .nav-present .nav-links { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: #faf8f5; flex-direction: column; padding: 1.5rem 2rem; gap: 1.5rem; border-bottom: 1px solid #e5e0d8; }
+            .nav-present .nav-links.active { display: flex; }
+            .info-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .info-detail { grid-template-columns: 1fr; gap: 1.5rem; }
+            .info-cta .tel-link-big { font-size: 1.4rem; padding: 0.8rem 2rem; }
+            .info-hero { padding: 4rem 0 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-present">
+            <a href="/" class="logo">화곡 가라오케</a>
+            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="tel:01062790862" class="tel-link">010-6279-0862</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container info-hero">
+            <h1>화곡 가라오케,<br>진짜 정보를 원한다면</h1>
+            <p class="drop-cap">여기저기 떠도는 가라오케 정보, 대부분 거짓말이야. 화곡에서 진짜를 원한다면, 우리가 말하는 이 공간을 기억해. 예약 하나로 모든 게 달라진다.</p>
+        </section>
+
+        <section class="container section-gap">
+            <h2>화곡 가라오케의 진실</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🔥 사운드, 타협 없다</h3>
+                    <p>음향 시스템은 단순한 장비가 아냐. 우리는 화곡에서 가장 날카로운 사운드를 고집해. 가사 한 줄, 음 하나까지 놓치지 않는 완벽한 프라이빗. 가식적인 볼륨이 아닌 진짜 울림을 원한다면, 이곳이 정답이야.</p>
+                </div>
+                <div class="info-card">
+                    <h3>💎 프라이빗의 재정의</h3>
+                    <p>여긴 그냥 노래방이 아니야. 당신만의 시간을 지배할 공간. 커튼 하나, 조명 하나까지 신경 썼다. 화곡에서 이런 프라이빗을 찾는다면, 다른 곳은 잊어도 좋아.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🍸 술과 음악의 완벽한 조화</h3>
+                    <p>음악 없는 술은 반쪽짜리야. 우리가 제안하는 건, 한 잔과 함께하는 완벽한 사운드. 화곡에서 회식, 데이트, 혼술까지. 모든 순간을 특별하게 만드는 비밀은 여기에 있어.</p>
+                </div>
+                <div class="info-card">
+                    <h3>📞 예약은 곧 권력</h3>
+                    <p>이곳은 항상 준비되어 있어. 하지만 진짜를 원하는 사람들로 금방 차. 예약은 선택이 아니라 필수야. 010-6279-0862, 지금 바로 전화해. 당신의 밤을 내가 책임진다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>화곡 가라오케, 이렇게 다르다</h2>
+            <div class="info-detail">
+                <div class="info-detail-item">
+                    <h4>위치 & 접근성</h4>
+                    <p>화곡동 중심, 누구나 쉽게 찾아와. 대중교통도 편리하고, 주차도 문제없어. 겉치레보다 실속을 원한다면, 이 위치가 딱이야.</p>
+                </div>
+                <div class="info-detail-item">
+                    <h4>시설 & 시스템</h4>
+                    <p>최신 음향, 무한 곡 선택, 그리고 깔끔한 룸. 우리는 매일 업데이트되는 시스템으로 당신을 기다려. 오래된 건 쓰레기야. 여긴 다르다.</p>
+                </div>
+                <div class="info-detail-item">
+                    <h4>가격 & 가치</h4>
+                    <p>값싼 가격에 속지 마. 진짜 가치는 퀄리티에서 나와. 우리는 합리적인 가격에 프리미엄을 제공한다. 화곡에서 이 정도면, 너무나 당연한 선택이야.</p>
+                </div>
+                <div class="info-detail-item">
+                    <h4>분위기 & 서비스</h4>
+                    <p>가식 없는 서비스, 날카로운 분위기. 직원들은 당신의 시간을 존중해. 필요할 때만 다가가고, 방해하지 않아. 진짜 편안함을 원한다면, 여기가 맞아.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container info-cta">
+            <h3>지금 당장, 진짜를 예약해</h3>
+            <p>화곡에서 가장 날카로운 가라오케, 기다리는 건 시간 낭비야.</p>
+            <a href="tel:01062790862" class="tel-link-big">010-6279-0862</a>
+        </section>
+
+        <section class="container faq-section">
+            <h2>자주 묻는 질문</h2>
+            <div class="faq-item">
+                <h4>예약은 꼭 해야 하나요?</h4>
+                <p>당연하지. 특히 금요일과 주말은 거의 만석이야. 원하는 시간을 보장받고 싶다면, 미리 전화해. 010-6279-0862로 바로 예약 가능해.</p>
+            </div>
+            <div class="faq-item">
+                <h4>화곡 가라오케, 몇 명까지 가능한가요?</h4>
+                <p>소규모부터 단체까지 모두 환영. 우리 룸은 2인부터 10인 이상까지 다양하게 준비되어 있어. 인원에 맞춰 최적의 공간을 제안할게.</p>
+            </div>
+            <div class="faq-item">
+                <h4>음식이나 주류는 별도인가요?</h4>
+                <p>모든 건 당신의 선택에 달렸어. 다양한 주류와 안주를 준비했고, 필요하면 추천도 해줄게. 하지만 여기선 음악과 분위기가 메인이야, 그걸 잊지 마.</p>
+            </div>
+            <div class="faq-item">
+                <h4>처음인데 분위기가 어색하지 않을까요?</h4>
+                <p>걱정 마. 우리 스태프는 당신이 편안하게 즐길 수 있도록 도와줄 거야. 처음이면 더 잘 맞춰줄게. 진짜 가라오케를 경험해봐.</p>
+            </div>
+        </section>
+
+        <section class="container section-gap">
+            <h2>화곡에서, 이곳만 기억해</h2>
+            <p class="drop-cap">수많은 가라오케가 넘쳐나는 화곡. 하지만 진짜를 찾는 건 쉽지 않아. 우리는 말로만 떠드는 곳이 아니야. 사운드, 프라이빗, 서비스. 모든 게 증명한다. 당신의 밤을 지배할 단 하나의 선택, 여기 있다.</p>
+            <p>주저하지 마. 전화 한 통이면 모든 게 시작돼. 010-6279-0862. 지금 바로 예약하고, 화곡에서 가장 날카로운 경험을 해.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>화곡 가라오케 예약 | 010-6279-0862 | 진짜를 원하는 당신을 위한 공간</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">© 화곡 가라오케. All rights
+</body>
+</html>
